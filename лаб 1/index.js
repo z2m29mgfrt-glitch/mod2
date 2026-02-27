@@ -1,8 +1,9 @@
-let name = 'Екатерина';
-console.log(myname);
+
+let userName = 'Екатерина';
+console.log(userName);
 
 let surname = 'Лысова';
-console.log(mysurname);
+console.log(surname);
 
 let bachelor = true;
 console.log(bachelor);
@@ -10,20 +11,18 @@ console.log(bachelor);
 let age = 23;
 console.log(age);
 
-let fullname = myname + ' ' + mysurname;
-fullname = fullname + ' возраст: ' + age;
-console.log(fullname);
-
+let fullName = userName + ' ' + surname;
+fullName = fullName + ' возраст: ' + age;
+console.log(fullName);
 
 let hour = 14;
 let work = hour >= 9 && hour <= 18;
-let today = 'пятница';
-let holiday = today === 'суббота' || today === 'воскресенье';
-let canwork = work && !holiday;
-console.log(canwork);
+let today = 'Пятница';
+let holiday = today === 'Суббота' || today === 'Воскресенье';
+let canWork = work && !holiday;
+console.log(canWork);
 
-
-let celsius = prompt("введите температуру в Цельсиях:");
+let celsius = prompt("Введите температуру в Цельсиях:");
 celsius = Number(celsius);
 
 const fahrenheit = celsius * 9/5 + 32;
