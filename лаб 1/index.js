@@ -28,9 +28,5 @@ console.log(canWork);
 let celsius = prompt("Введите температуру в Цельсиях:");
 celsius = Number(celsius);
 
-if (isNaN(celsius)) {
-    alert("Ошибка: введите корректное число!");
-} else {
-    const fahrenheit = celsius * 9/5 + 32;
-    alert(fahrenheit);
-}
+const fahrenheit = celsius * 9/5 + 32;
+alert(fahrenheit);
