@@ -1,32 +1,36 @@
-function showinfo() {
-    console.log('Екатерина Лысова');
-    console.log('5401-420303V');
-}
-showinfo();
-
-function gettemp() {
-    let t = prompt('Введите температуру:');
-    return Number(t);
+function aboutMe () {
+console.log ('Екатерина Лысова');
+console.log ('5401-420303V');
 }
 
-let temp = gettemp();
+aboutMe ();
 
-function isfreezing(t) {
-    return t < -10;
+function askTemperature () {
+let temp = prompt ('Введите температуру:');
+return Number (temp);
 }
 
-function advise(t) {
-    if (isfreezing(t)) {
-        alert('Одевайтесь теплее. Обязательно возьмите шапку!');
-    } else {
-        alert('На улице тепло. Одевайтесь легко!');
-    }
-}
-advise(temp);
+let currentTemperature = askTemperature();
 
-function tofahrenheit(c) {
-    return c * 1.8 + 32;
+
+function isCold (temp) {
+return temp < -10;
 }
 
-let f = tofahrenheit(temp);
-alert('В США используют Фаренгейты. Примерно это будет: ' + f + ' °F');
+function suggestCloth(temp) {
+if (isCold (temp)) {
+alert ('Одевайтесь теплее. Обязательно возьмите шапку!');
+}
+else {
+alert ('На улице тепло. Одевайтесь легко!');
+}
+}
+
+suggestCloth(currentTemperature);
+
+function celsiusToFahrenheit (celsius) {
+return celsius * 1.8 + 32;
+}
+
+let fahrenheit = celsiusToFahrenheit (currentTemperature);
+alert("В США используют Фаренгейты. Примерно это будет: " + fahrenheit + " °F");
